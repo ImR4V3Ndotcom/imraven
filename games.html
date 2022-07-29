@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Games I Play</title>
+	<style>
+		body{
+			background-color: #1AF5BB;
+			color: darkolivegreen;
+			font-family: Trebuchet MS;
+			text-align: center;
+
+		}
+
+		.main{
+			display: flex;
+			position: absolute;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		table tr{
+			width: 100%;
+			height: 100%;
+		}
+
+		td{
+			width: 50%;
+			height: 100%;
+			padding-bottom: 30px;
+		}
+
+		tr{
+			margin-bottom: 50px;
+
+		}
+
+		table{
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.card{
+			background-color: transparent;
+			width: 300px;
+			height: 300px;
+			perspective: 1000px;
+		}
+
+		.card img{
+			width: 300px;
+			height: 300px;
+		}
+
+		.inner{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			transition: transform 0.3s;
+			transform-style: preserve-3d;
+		}
+
+		.front, .back{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			font-size: 50px;
+			color: white;
+		}
+
+		.back{
+			background-color: black;
+			transform: rotateX(180deg);
+		}
+
+		.card:hover .inner{
+			transform: rotateX(180deg);
+		}
+
+		.btn{
+			float: left;
+		}
+
+
+	</style>
+
+	<button class = "btn" onclick = "document.location = './index.html' ">< Back</button>
+
+</head>
+<body>
+
+	<div class = "main">
+		<table class = "center">
+			<tr>
+				<td>
+					<div class = "card">
+						<div class = "inner">
+							<div class = "image">
+								<img src="https://static.wikia.nocookie.net/roblox/images/8/8b/BedWars.png/revision/latest?cb=20210723201620" class = "front">
+						</div>
+						<div class = "back">
+							<p> Roblox Bedwars</p>
+						</div>
+					</div>
+				</div>
+
+				</td>
+
+
+				<td>
+					<div class = "card">
+						<div class = "inner">
+							<div class = "image">
+								<img src="https://brybed.com/storage/img/5ea/466/BuPZE1VKHJduzN8y9wERTdwx14mTiWt8VIqFj1t2.jpeg" class = "front">
+						</div>
+						<div class = "back">
+							<p> Roblox Arsenal</p>
+						</div>
+					</div>
+				</div>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class = "card">
+						<div class = "inner">
+							<div class = "image">
+								<img src="https://assets.change.org/photos/9/vd/ee/uRVdeejdIqYtPnC-800x450-noPad.jpg?1538266455" class = "front">
+						</div>
+						<div class = "back">
+							<p>Guns of Glory</p>
+						</div>
+					</div>
+				</div>
+
+				</td>
+
+
+				<td>
+					<div class = "card">
+						<div class = "inner">
+							<div class = "image">
+								<img src="https://static.wikia.nocookie.net/2faf349f-b9a2-4bb3-864b-3137ebbe8027/scale-to-width/755" class = "front">
+						</div>
+						<div class = "back">
+							<p>SCP 3008ㅤ</p>
+						</div>
+					</div>
+				</div>
+
+				</td>
+			</tr>
+
+		</table>
+	</div>
+
+
+
+</body>
+</html>

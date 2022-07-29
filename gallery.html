@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Picture Gallery</title>
+	<style>
+
+		body{
+			background-color: #1AF5BB;
+			color: darkolivegreen;
+			font-family: Trebuchet MS;
+			text-align: center;
+
+		}
+		
+		.wrapper{
+			width: 100%;
+			margin: 30px auto;
+		}	
+
+		div.gallery{
+			 margin-top: 30px;
+		}
+
+		ul{
+			list-style-type: none;
+		}
+
+		div.gallery ul li{
+			position: relative;
+			float: left;
+			width: 300px;
+			height: 300px;
+			margin: 5px;
+			padding: 5px;
+		}
+
+		div.gallery ul li img{
+			position: absolute;
+			left: 0;
+			top: 0;
+			padding: 5px;
+			width: 250px;
+			height: 250px;
+		}
+
+		div.gallery ul li, div.gallery li img{
+			transition: all 0.3s;
+		}
+
+		div.gallery ul li img:hover{
+			width:310px;
+			height: 310px;
+			margin-top:-280px;
+			margin-left: -250px;
+			top: 65%;
+			left: 65%;
+		}
+
+		.btn{
+			float: left;
+		}
+
+
+	</style>
+
+	<button class = "btn" onclick = "document.location = './index.html' ">< Back</button>
+
+</head>
+<body>
+	<div id= "header">
+		<h1> Meme Gallery </h1>
+	</div>
+
+	<div class = "wrapper">
+		<div class = "gallery">
+			<ul>
+				<li><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXtE016l2TElX4uMO6C4NaT9UWD-PHWBC2Sg&usqp=CAU"></li>
+				<li><img src = "https://memegenerator.net/img/instances/26065755.jpg"></li>
+				<li><img src = "https://static.wikia.nocookie.net/roblox/images/8/8b/BedWars.png/revision/latest?cb=20210723201620"></li>
+				<li><img src = "https://static.boredpanda.com/blog/wp-content/uploads/2017/05/funny-design-fails-30-5912d3a7c7daf__605.jpg"></li>
+				<li><img src = "https://brybed.com/storage/img/5ea/466/BuPZE1VKHJduzN8y9wERTdwx14mTiWt8VIqFj1t2.jpeg"></li>
+				<li><img src = "https://pd-beamliving-cd.beamliving.com/-/media/14-to-bl/2021-funny-memes-cats-1000x666px.jpg"></li>
+				<li><img src = "https://i.ytimg.com/vi/Q71v1xfVF8I/maxresdefault.jpg"></li>
+				<li><img src = "https://slapwank.com/wp-content/uploads/2019/09/back-to-school-memes.jpg"></li>
+				<li><img src = "https://i0.wp.com/www.sammichespsychmeds.com/wp-content/uploads/2018/03/2-1.jpg?resize=800%2C800&ssl=1"></li>
+				<li><img src = "https://i.ytimg.com/vi/4GdgkchB6zU/maxresdefault.jpg"></li>
+				<li><img src = "https://images.saymedia-content.com/.image/t_share/MTc2MjQ4NTE0NDUwNTY0NTIx/you-had-one-job-memes.jpg"></li>
+				<li><img src = "https://preview.redd.it/574njdw2luq81.jpg?auto=webp&s=32c46359591be3df48eadbba7489b93184d11c33"></li>
+				
+
+			</ul>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
